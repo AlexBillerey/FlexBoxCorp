@@ -97,7 +97,31 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+#container {
+    margin-top: 0;
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width:85%;
+    max-width: 64em;
+    margin:0 auto;
+}
+header {
+    background:yellowgreen;
+}
+header h1 {
+    margin:0;
+}
+#hero_container {
+    display: flex;
+    flex-direction: column;
+    border-bottom:solid 1px #ddd;
+    border-top:solid 1px #ddd;
+    margin-top:1em;
+}
+#hero_container section {
+    background: white;
+}
 
 
 
@@ -220,8 +244,36 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 48em) {
+    /* Style adjustments for viewports that meet the condition 48em = 768px */
+    #secondary_nav {
+        align-items: flex-start;
+        background: transparent;
+        display:flex;
+        flex-direction: column;
+    }
+    #secondary_nav ul {
+        display: inline-flex;
+        align-self: flex-end;
+        margin:-2em 0 0 0;
+        background: linear-gradient(90deg, rgba(204, 204, 204, 0.50), rgba(255,255,255,.5));
+    }
+    #secondary_nav li {
+        align-self: flex-end;
+        flex: 1 0 auto;
+    }
+    #hero_container {
+        flex-direction: row;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: linear-gradient(0deg, #ffffff, aliceblue);
+    }
+    #hero_container section {
+        padding:.5em;
+        flex: 0 1 auto;
+        width:30%;
+    }
 }
 
 @media print,
@@ -302,3 +354,4 @@ textarea {
         page-break-after: avoid;
     }
 }
+
