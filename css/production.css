@@ -648,14 +648,16 @@ textarea {
 }
 
 header {
-  background: yellowgreen;
+  background: #ffffff;
+  border-bottom: solid 1px #999;
 }
 
 header h1 {
   margin: 0;
 }
 
-#hero_container {
+#hero_container,
+#content_holder {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -668,13 +670,8 @@ header h1 {
   -moz-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border-bottom: solid 1px #ddd;
-  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #999;
   margin-top: 1em;
-}
-
-#hero_container section {
-  background: white;
 }
 
 /* ==========================================================================
@@ -818,9 +815,9 @@ header h1 {
     -ms-flex-item-align: end;
     align-self: flex-end;
     margin: -2em 0 0 0;
-    background: -webkit-linear-gradient(0deg, rgba(204, 204, 204, 0.50), rgba(255,255,255,.5));
-    background: -o-linear-gradient(0deg, rgba(204, 204, 204, 0.50), rgba(255,255,255,.5));
-    background: linear-gradient(90deg, rgba(204, 204, 204, 0.50), rgba(255,255,255,.5));
+    background: -webkit-linear-gradient(260deg, rgba(204, 204, 204, 0.50), rgba(255,255,255,.5));
+    background: -o-linear-gradient(260deg, rgba(204, 204, 204, 0.50), rgba(255,255,255,.5));
+    background: linear-gradient(190deg, rgba(204, 204, 204, 0.50), rgba(255,255,255,.5));
   }
 
   #secondary_nav li {
@@ -834,7 +831,8 @@ header h1 {
     flex: 1 0 auto;
   }
 
-  #hero_container {
+  #hero_container,
+  #content_holder {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -855,19 +853,96 @@ header h1 {
     -moz-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    background: -webkit-linear-gradient(90deg, #ffffff, aliceblue);
-    background: -o-linear-gradient(90deg, #ffffff, aliceblue);
-    background: linear-gradient(0deg, #ffffff, aliceblue);
+    /*background: linear-gradient(0deg, #999, #ffffff);*/
+    padding-bottom: 1em;
   }
 
   #hero_container section {
-    padding: .5em;
+    padding: 0 .5em .5em;
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 auto;
     -moz-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    width: 30%;
+    width: -webkit-calc(33% - 1em);
+    width: calc(33% - 1em);
+    margin-right: 1em;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    background: #fff;
+  }
+
+  #hero_container section:last-child,
+  #content_holder section:last-child {
+    margin-right: 0;
+  }
+
+  #hero_container section:hover {
+    /*width:80%;*/
+  }
+
+  #hero_container h1 {
+    margin-top: 0;
+  }
+
+  #prime_content {
+    padding: 0 .5em .5em;
+    -webkit-box-flex: 4;
+    -webkit-flex: 4 1 0;
+    -moz-box-flex: 4;
+    -ms-flex: 4 1 0;
+    flex: 4 1 0;
+    /*width:30%;
+        width: calc(45% - 1em);*/
+    margin-right: 1em;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    background: #fff;
+    border-left: solid 1px #999;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  #prime_content h2 {
+    margin: 0;
+    font-size: .875em;
+    border-bottom: solid 2px #333;
+    color: #999;
+  }
+
+  #prime_content article {
+    /*display:flex;*/
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -moz-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+  }
+
+  #prime_nav {
+    padding: 0 .5em .5em;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
+    -moz-box-flex: 1;
+    -ms-flex: 1 1 0;
+    flex: 1 1 0;
+    /*width:auto;*/
+    margin-right: 0em;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    background: #fff;
+    border-left: solid 1px #999;
   }
 }
 
