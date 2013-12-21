@@ -816,6 +816,7 @@ header h1 {
     align-self: flex-end;
     margin: -2em 0 0 0;
     background: -webkit-linear-gradient(260deg, rgba(204, 204, 204, 0.50), rgba(255,255,255,.5));
+    background: -moz-linear-gradient(260deg, rgba(204, 204, 204, 0.50), rgba(255,255,255,.5));
     background: -o-linear-gradient(260deg, rgba(204, 204, 204, 0.50), rgba(255,255,255,.5));
     background: linear-gradient(190deg, rgba(204, 204, 204, 0.50), rgba(255,255,255,.5));
   }
@@ -865,6 +866,7 @@ header h1 {
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     width: -webkit-calc(33% - 1em);
+    width: -moz-calc(33% - 1em);
     width: calc(33% - 1em);
     margin-right: 1em;
     -webkit-align-self: stretch;
@@ -888,11 +890,25 @@ header h1 {
 
   #prime_content {
     padding: 0 .5em .5em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-flex: 4;
     -webkit-flex: 4 1 0;
     -moz-box-flex: 4;
     -ms-flex: 4 1 0;
     flex: 4 1 0;
+    /*flex-wrap: wrap;*/
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     /*width:30%;
         width: calc(45% - 1em);*/
     margin-right: 1em;
@@ -901,16 +917,16 @@ header h1 {
     align-self: stretch;
     background: #fff;
     border-left: solid 1px #999;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+  }
+
+  /*
+    This is a hack to get around FF's lack of support for flex-wrap see http://caniuse.com/#search=flex notes section for more info.
+    */
+
+  .no-flexbox #prime_content article {
+    width: -webkit-calc(50% - 1em);
+    width: -moz-calc(50% - 1em);
+    width: calc(50% - 1em);
   }
 
   #prime_content h2 {
