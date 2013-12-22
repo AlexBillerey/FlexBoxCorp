@@ -269,7 +269,7 @@ header h1 {
     }
 
     #hero_container section {
-        padding:0 .5em .5em;
+        padding:0 .5em .5em 0;
         flex: 0 1 auto;
         width:calc(33% - 1em);
         margin-right:1em;
@@ -285,6 +285,9 @@ header h1 {
     #hero_container h1 {
         margin-top:0;
     }
+    #hero_container p {
+        margin-left:1em;
+    }
     #prime_content {
         padding:0 .5em .5em;
         display:flex;
@@ -293,22 +296,35 @@ header h1 {
         flex-flow: row wrap;
         justify-content: space-between;
         /*width:30%;
-        width: calc(45% - 1em);*/
-        margin-right:1em;
+        width: calc(45% - 1em);
+        margin-right:1em;*/
         align-self: stretch;
         background: #fff;
         border-left:solid 1px #999;
+        background: peachpuff;
     }
     /*
     This is a hack to get around FF's lack of support for flex-wrap see http://caniuse.com/#search=flex notes section for more info.
     */
-    .no-flexbox #prime_content article {
-        width:calc(50% - 1em);
+    .no-flexbox #prime_content {
+        display:block;
     }
+    .no-flexbox #prime_content article {
+        width:calc(50% - 1.5em);
+        float: left;
+        /*background: rgba(56,134,64,.8);*/
+        margin-right:1.5em;
+    }
+    .no-flexbox #prime_content article:nth-child(even) {
+
+        margin-right: 0;
+        margin-left: 1.5em;
+    }
+    /* End of FF hack */
     #prime_content h2 {
         margin:0;
         font-size: .875em;
-        border-bottom: solid 2px #333;
+        border-bottom: solid 2px #393939;
         color:#999;
     }
     #prime_content article {
@@ -323,6 +339,10 @@ header h1 {
         align-self: stretch;
         background: #fff;
         border-left:solid 1px #999;
+    }
+    #secondary_content {
+        background: yellowgreen;
+        display: flex;
     }
 }
 
