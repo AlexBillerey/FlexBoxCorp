@@ -15,12 +15,12 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+	color: #222;
 }
 
 html {
-    font-size: 1em;
-    line-height: 1.4;
+	font-size: 1em;
+	line-height: 1.4;
 }
 
 /*
@@ -30,13 +30,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 /*
@@ -44,12 +44,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 /*
@@ -61,7 +61,7 @@ audio,
 canvas,
 img,
 video {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 /*
@@ -69,9 +69,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /*
@@ -79,7 +79,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
 
 /* ==========================================================================
@@ -87,10 +87,10 @@ textarea {
    ========================================================================== */
 
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
 }
 
 /* ==========================================================================
@@ -98,39 +98,21 @@ textarea {
    ========================================================================== */
 
 #container {
-    margin-top: 0;
-    display:flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    width:85%;
-    max-width: 64em;
-    margin:0 auto;
+	margin-top: 0;
+	width: 85%;
+	max-width: 64em;
+	margin: 0 auto;
 }
+
 header {
-    background:#ffffff;
-    border-bottom: solid 1px #999;
+	background: #ffffff;
+	border-bottom: solid 1px #999;
 }
+
 header h1 {
-    margin:0;
+	margin: 0;
+	color: #db7a0d;
 }
-#hero_container, #content_holder {
-    display: flex;
-    flex-direction: column;
-    border-bottom:solid 1px #999;
-    margin-top:1em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -143,18 +125,18 @@ header h1 {
  */
 
 .ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
 }
 
 .ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
 }
 
 /*
@@ -162,8 +144,8 @@ header h1 {
  */
 
 .hidden {
-    display: none !important;
-    visibility: hidden;
+	display: none !important;
+	visibility: hidden;
 }
 
 /*
@@ -171,14 +153,14 @@ header h1 {
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 }
 
 /*
@@ -188,12 +170,12 @@ header h1 {
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
 }
 
 /*
@@ -201,7 +183,7 @@ header h1 {
  */
 
 .invisible {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 /*
@@ -218,12 +200,12 @@ header h1 {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+	content: " "; /* 1 */
+	display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+	clear: both;
 }
 
 /*
@@ -232,7 +214,7 @@ header h1 {
  */
 
 .clearfix {
-    *zoom: 1;
+	*zoom: 1;
 }
 
 /* ==========================================================================
@@ -240,117 +222,195 @@ header h1 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+#secondary_nav {
+	align-items: flex-start;
+	background: transparent;
+	display: flex;
+	flex-direction: column;
+}
 
-@media only screen and (min-width: 48em) {
-    /* Style adjustments for viewports that meet the condition 48em = 768px */
-    #secondary_nav {
-        align-items: flex-start;
-        background: transparent;
-        display:flex;
-        flex-direction: column;
-    }
-    #secondary_nav ul {
-        display: inline-flex;
-        align-self: flex-end;
-        margin:-2em 0 0 0;
-        background: linear-gradient(190deg, rgba(204, 204, 204, 0.50), rgba(255,255,255,.5));
-    }
-    #secondary_nav li {
-        align-self: flex-end;
-        flex: 1 0 auto;
-    }
-    #hero_container, #content_holder {
-        flex-direction: row;
-        align-content: flex-start;
-        align-items: flex-start;
-        justify-content: space-between;
-        /*background: linear-gradient(0deg, #999, #ffffff);*/
-        padding-bottom:1em;
-    }
+#secondary_nav ul {
+	display: inline-flex;
+	align-self: flex-end;
+	margin: -2em 0 0 0;
+	background: linear-gradient(190deg, rgba(204, 204, 204, 0.50), rgba(255, 255, 255, .5));
+}
 
-    #hero_container section {
-        padding:0 .5em .5em 0;
-        flex: 0 1 auto;
-        width:calc(33% - 1em);
-        margin-right:1em;
-        align-self: stretch;
-        background: #fff;
-    }
-    #hero_container section:last-child, #content_holder section:last-child {
-        margin-right:0;
-    }
-    #hero_container section:hover {
-        /*width:80%;*/
-    }
-    #hero_container h1 {
-        margin-top:0;
-    }
-    #hero_container p {
-        margin-left:1em;
-    }
-    #prime_content {
-        padding:0 .5em .5em;
-        display:flex;
-        flex: 4 1 0;
-        /*flex-wrap: wrap;*/
-        flex-flow: row wrap;
-        justify-content: space-between;
-        /*width:30%;
-        width: calc(45% - 1em);
-        margin-right:1em;*/
-        align-self: stretch;
-        background: #fff;
-        border-left:solid 1px #999;
-        background: peachpuff;
-    }
-    /*
-    This is a hack to get around FF's lack of support for flex-wrap see http://caniuse.com/#search=flex notes section for more info.
-    */
-    .no-flexbox #prime_content {
-        display:block;
-    }
-    .no-flexbox #prime_content article {
-        width:calc(50% - 1.5em);
-        float: left;
-        /*background: rgba(56,134,64,.8);*/
-        margin-right:1.5em;
-    }
-    .no-flexbox #prime_content article:nth-child(even) {
+#secondary_nav li {
+	align-self: flex-end;
+	flex: 1 0 auto;
+}
+.hero_container {
+	border-bottom: solid 1px #999;
+	margin-top: 1em;
+	padding-bottom: 1em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: stretch;
+	transition:all .5s linear 0s;
+}
 
-        margin-right: 0;
-        margin-left: 1.5em;
-    }
-    /* End of FF hack */
-    #prime_content h2 {
-        margin:0;
-        font-size: .875em;
-        border-bottom: solid 2px #393939;
-        color:#999;
-    }
-    #prime_content article {
-        /*display:flex;*/
-        flex: 0 1 auto;
-    }
-    #prime_nav {
-        padding:0 .5em .5em;
-        flex: 1 1 0;
-        /*width:auto;*/
-        margin-right:0em;
-        align-self: stretch;
-        background: #fff;
-        border-left:solid 1px #999;
-    }
-    #secondary_content {
-        background: yellowgreen;
-        display: flex;
-    }
+.hero_container section {
+	padding: .5rem;
+}
+
+.hero_container section:first-child {
+	color: #737373;
+	border-right: solid 5px #737373;
+	background: #cccccc;
+}
+.hero_container section:first-child:hover{
+
+}
+.hero_container section:last-child {
+	color: #939393;
+	border-right: solid 5px #939393;
+	background: rgba(204, 204, 204, 0.75);
+}
+.hero_container section:nth-child(even){
+	color: #555;
+	border-right: solid 5px #555;
+	background: rgba(204, 204, 204, 0.5);
+}
+
+.hero_container section:last-child, #content_holder section:last-child {
+	margin-right: 0;
+}
+
+.hero_container section:hover {
+	/*width:80%;*/
+}
+
+.hero_container h1 {
+	margin-top: 0;
+	border-bottom: 2px white dashed;
+}
+
+.hero_container p {
+	margin-left: 1em;
+}
+
+#prime_content {
+	padding: 0 .5em .5em;
+	display: flex;
+	flex: 4 1 0;
+	/*flex-wrap: wrap;*/
+	flex-flow: row wrap;
+	justify-content: space-between;
+	/*width:30%;
+	width: calc(45% - 1em);
+	margin-right:1em;*/
+	align-self: flex-start;
+	background: #fff;
+	border-left: solid 1px #999;
+	background: white;
+}
+
+/*
+This is a hack to get around FF's lack of support for flex-wrap see http://caniuse.com/#search=flex notes section for more info.
+*/
+.no-flexbox #prime_content {
+	display: block;
+}
+
+.no-flexbox #prime_content article {
+	width: calc(50% - 1.5em);
+	float: left;
+	/*background: rgba(56,134,64,.8);*/
+	margin-right: 1.5em;
+}
+
+.no-flexbox #prime_content article:nth-child(even) {
+
+	margin-right: 0;
+	margin-left: 1.5em;
+}
+
+#prime_content .fullwidth, .no-flexbox #prime_content .fullwidth {
+	width: 100%;
+	background: #ffffff;
+}
+
+/* End of FF hack */
+#prime_content h2 {
+	margin: 0;
+	font-size: .875em;
+	border-bottom: solid 2px #393939;
+	color: #999;
+}
+
+#prime_content article {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 auto;
+	width: calc(49% - 1em);
+	font-size: .9375em;
+	align-self: flex-start;
+}
+
+#prime_nav {
+	padding: 0 .5em .5em;
+	flex: 1 1 0;
+	/*width:auto;*/
+	margin-right: 0em;
+	align-self: stretch;
+	background: #fff;
+	border-left: solid 1px #999;
+}
+
+#prime_nav ul, #prime_nav a {
+	padding-left: 1em;
+	display: block;
+}
+
+#secondary_content {
+	background: yellowgreen;
+	display: flex;
+}
+@media only screen and (min-width: 20em) {
+	/* Style adjustments for viewports that meet the condition 20em = 320px */
+
+}
+@media only screen and (min-width: 600px) {
+	/* Style adjustments for viewports that meet the condition 600px */
+	.hero_container {
+		flex-direction: row;
+		flex-flow: row wrap;
+		transition:all .5s linear 0s;
+	}
+	.hero_container section {
+
+	}
+	.hero_container section:first-child {
+		flex-grow: 2;
+	}
+	.hero_container section:first-child:hover{
+
+	}
+	.hero_container section:last-child {
+		flex-grow: 1;
+	}
+	.hero_container section:nth-child(even){
+		flex-grow: 1;
+	}
+
+	.hero_container section:last-child, #content_holder section:last-child {
+
+	}
+
+	.hero_container section:hover {
+		/*width:80%;*/
+	}
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -359,69 +419,68 @@ header h1 {
    ========================================================================== */
 
 @media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+	* {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster: h5bp.com/s */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
+	/*
+	 * Don't show links for images, or javascript/internal links
+	 */
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
 
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+	img {
+		max-width: 100% !important;
+	}
 
-    img {
-        max-width: 100% !important;
-    }
+	@page {
+		margin: 0.5cm;
+	}
 
-    @page {
-        margin: 0.5cm;
-    }
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
 }
 
