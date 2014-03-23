@@ -114,8 +114,6 @@ header h1 {
 	color: #db7a0d;
 }
 
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -240,6 +238,7 @@ header h1 {
 	align-self: flex-end;
 	flex: 1 0 auto;
 }
+
 .hero_container {
 	border-bottom: solid 1px #999;
 	margin-top: 1em;
@@ -250,11 +249,11 @@ header h1 {
 	justify-content: flex-start;
 	align-content: flex-start;
 	align-items: stretch;
-	transition:all .5s linear 0s;
+	transition: all .5s linear 0s;
 }
 
 .hero_container section {
-	padding: .5rem;
+	/*padding: .5rem;*/
 }
 
 .hero_container section:first-child {
@@ -262,15 +261,18 @@ header h1 {
 	border-right: solid 5px #737373;
 	background: #cccccc;
 }
-.hero_container section:first-child:hover{
+
+.hero_container section:first-child:hover {
 
 }
+
 .hero_container section:last-child {
 	color: #939393;
 	border-right: solid 5px #939393;
 	background: rgba(204, 204, 204, 0.75);
 }
-.hero_container section:nth-child(even){
+
+.hero_container section:nth-child(even) {
 	color: #555;
 	border-right: solid 5px #555;
 	background: rgba(204, 204, 204, 0.5);
@@ -370,30 +372,44 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	background: yellowgreen;
 	display: flex;
 }
+
 @media only screen and (min-width: 20em) {
 	/* Style adjustments for viewports that meet the condition 20em = 320px */
-
+	#container {
+		width: 95%;
+		max-width: 64em;
+	}
 }
+
 @media only screen and (min-width: 600px) {
 	/* Style adjustments for viewports that meet the condition 600px */
 	.hero_container {
 		flex-direction: row;
 		flex-flow: row wrap;
-		transition:all .5s linear 0s;
+
 	}
+
 	.hero_container section {
-
+		/*flex:1 0 0%;*/
+		transition: flex-grow .25s linear 0s;
+		flex-grow: 1;
+		flex-basis: 0;
+		flex-shrink: 0%;
 	}
+
 	.hero_container section:first-child {
-		flex-grow: 2;
-	}
-	.hero_container section:first-child:hover{
-
-	}
-	.hero_container section:last-child {
 		flex-grow: 1;
 	}
-	.hero_container section:nth-child(even){
+
+	.hero_container section:first-child:hover {
+
+	}
+
+	.hero_container section:nth-child(even) {
+		flex-grow: 1;
+	}
+
+	.hero_container section:last-child {
 		flex-grow: 1;
 	}
 
@@ -402,7 +418,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	}
 
 	.hero_container section:hover {
-		/*width:80%;*/
+		flex-grow: 3;
 	}
 }
 

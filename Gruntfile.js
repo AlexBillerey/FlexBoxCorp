@@ -28,10 +28,11 @@ module.exports = function(grunt) {
 
 
         cssmin : {
-            css:{
+                css:{
                 src: 'css/production.css',
                 dest: 'css/production.min.css'
             }
+
         },
 
 
@@ -52,6 +53,6 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt); /* See http://blog.ponyfoo.com/2013/11/13/grunt-tips-and-tricks */
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['watch', 'concat', 'cssmin', 'autoprefixer']);
+    grunt.registerTask('default', ['watch', 'autoprefixer', 'concat', 'cssmin']);
 
 };
