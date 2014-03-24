@@ -417,9 +417,10 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 
 	}
 
-	.hero_container section:hover {
+	.hero_container section:hover,.hero_container section.openHero {
 		flex-grow: 3;
 	}
+
 }
 
 @media print,
