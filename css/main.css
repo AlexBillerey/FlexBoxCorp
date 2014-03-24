@@ -259,7 +259,7 @@ header h1 {
 .hero_container section:first-child {
 	color: #737373;
 	border-right: solid 5px #737373;
-	background: #cccccc;
+	background: transparent;
 }
 
 .hero_container section:first-child:hover {
@@ -269,13 +269,13 @@ header h1 {
 .hero_container section:last-child {
 	color: #939393;
 	border-right: solid 5px #939393;
-	background: rgba(204, 204, 204, 0.75);
+	background: transparent;
 }
 
 .hero_container section:nth-child(even) {
 	color: #555;
 	border-right: solid 5px #555;
-	background: rgba(204, 204, 204, 0.5);
+	background: transparent;
 }
 
 .hero_container section:last-child, #content_holder section:last-child {
@@ -288,7 +288,7 @@ header h1 {
 
 .hero_container h1 {
 	margin-top: 0;
-	border-bottom: 2px white dashed;
+	border-bottom: 10px solid rgba(255,255,255,.5);
 }
 
 .hero_container p {
@@ -386,7 +386,13 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	.hero_container {
 		flex-direction: row;
 		flex-flow: row wrap;
-
+		align-content: stretch;
+		height:22em;
+		background: transparent url("../img/bw1024.png") no-repeat 50% 100% fixed;
+		background-size: cover;
+		padding-bottom:0;
+		border:solid 1px #000;
+		box-shadow: 2px 2px 5px rgba(0,0,0,.5);
 	}
 
 	.hero_container section {
@@ -398,19 +404,27 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	}
 
 	.hero_container section:first-child {
-		flex-grow: 1;
+		/*flex-grow: 1;*/
 	}
 
 	.hero_container section:first-child:hover {
-
+	background: transparent url("../img/c1024.png") no-repeat 50% 100% fixed;
+	background-size: cover;
 	}
 
 	.hero_container section:nth-child(even) {
-		flex-grow: 1;
+		/*flex-grow: 1;*/
 	}
-
+	.hero_container section:nth-child(even):hover {
+		background: transparent url("../img/c1024.png") no-repeat 50% 100% fixed;
+		background-size: cover;
+	}
 	.hero_container section:last-child {
-		flex-grow: 1;
+		/*flex-grow: 1;*/
+	}
+	.hero_container section:last-child:hover {
+		background: transparent url("../img/c1024.png") no-repeat 50% 100% fixed;
+		background-size: cover;
 	}
 
 	.hero_container section:last-child, #content_holder section:last-child {
@@ -419,6 +433,13 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 
 	.hero_container section:hover,.hero_container section.openHero {
 		flex-grow: 3;
+	}
+	.hero_container section:last-child.openHero,.hero_container section:nth-child(even).openHero,.hero_container section:first-child.openHero {
+		background: transparent url("../img/c1024.png") no-repeat 50% 100% fixed;
+		background-size: cover;
+	}
+	.hero_container h1 {
+		margin: 0 .6rem .3rem .3rem;
 	}
 
 }
