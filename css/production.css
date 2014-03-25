@@ -1020,9 +1020,8 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		-ms-flex-line-pack: stretch;
 		align-content: stretch;
 		height:22em;
-		background: transparent url("../img/bw1024.png") no-repeat 50% 100% fixed;
-		-webkit-background-size: cover;
-		background-size: cover;
+		/*background: transparent url("../img/bw1024.png") no-repeat 50% 100% fixed;
+		background-size: cover;*/
 		padding-bottom:0;
 		border:solid 1px #000;
 		-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.5);
@@ -1031,13 +1030,9 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 
 	.hero_container section {
 		/*flex:1 0 0%;*/
-		-webkit-transition: -webkit-box-flex .25s linear 0s;
-		-webkit-transition: -webkit-flex-grow .25s linear 0s;
-		-o-transition: flex-grow .25s linear 0s;
-		transition: -webkit-box-flex .25s linear 0s;
-		transition: -moz-box-flex .25s linear 0s;
-		transition: -ms-flex-positive .25s linear 0s;
-		transition: flex-grow .25s linear 0s;
+		-webkit-transition: all .75s ease-in 0s;
+		-o-transition: all .75s ease-in 0s;
+		transition: all .75s ease-in 0s;
 		-webkit-box-flex: 1;
 		-webkit-flex-grow: 1;
 		-moz-box-flex: 1;
@@ -1046,13 +1041,20 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		-webkit-flex-basis: 0;
 		-ms-flex-preferred-size: 0;
 		flex-basis: 0;
-		-webkit-flex-shrink: 0%;
-		-ms-flex-negative: 0%;
-		flex-shrink: 0%;
+		-webkit-flex-shrink: 0;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+		background: transparent url("../img/bw1024.png") no-repeat 50% 100% fixed;
+		-webkit-background-size: cover;
+		background-size: cover;
 	}
 
 	.hero_container section:first-child {
 		/*flex-grow: 1;*/
+		background: transparent url("../img/bw1024.png") no-repeat 50% 100% fixed;
+		-webkit-background-size: cover;
+		background-size: cover;
+		border-right: solid 25px rgba(115, 115, 115, 0);
 	}
 
 	.hero_container section:first-child:hover {
@@ -1063,6 +1065,10 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 
 	.hero_container section:nth-child(even) {
 		/*flex-grow: 1;*/
+		background: transparent url("../img/bw1024.png") no-repeat 50% 100% fixed;
+		-webkit-background-size: cover;
+		background-size: cover;
+		border-right: solid 25px rgba(85, 85, 85, 0);
 	}
 	.hero_container section:nth-child(even):hover {
 		background: transparent url("../img/c1024.png") no-repeat 50% 100% fixed;
@@ -1071,15 +1077,15 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	}
 	.hero_container section:last-child {
 		/*flex-grow: 1;*/
+		background: transparent url("../img/bw1024.png") no-repeat 50% 100% fixed;
+		-webkit-background-size: cover;
+		background-size: cover;
+		border-right: solid 25px rgba(147, 147, 147, 0);
 	}
 	.hero_container section:last-child:hover {
 		background: transparent url("../img/c1024.png") no-repeat 50% 100% fixed;
 		-webkit-background-size: cover;
 		background-size: cover;
-	}
-
-	.hero_container section:last-child, #content_holder section:last-child {
-
 	}
 
 	.hero_container section:hover,.hero_container section.openHero {
@@ -1088,12 +1094,16 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		-moz-box-flex: 3;
 		-ms-flex-positive: 3;
 		flex-grow: 3;
+		border-color: rgba(219, 122, 13, 0.75);
 	}
 	.hero_container section:last-child.openHero,.hero_container section:nth-child(even).openHero,.hero_container section:first-child.openHero {
 		background: transparent url("../img/c1024.png") no-repeat 50% 100% fixed;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
+/*	.hero_container section:not(.openHero) {
+		opacity:.5;
+	}*/
 	.hero_container h1 {
 		margin: 0 .6rem .3rem .3rem;
 	}
