@@ -832,41 +832,39 @@ header h1 {
 
 .hero_container section {
 	/*padding: .5rem;*/
+	display: block;
+	background-image:none;
+	color:#222223;
 }
 
 .hero_container section:first-child {
-	color: #737373;
-	border-right: solid 5px #737373;
-	background: transparent;
+	/*color: rgb(255, 255, 255);
+	border-right: solid 5px #737373;*/
+	/*background: transparent;*/
 }
 
-.hero_container section:first-child:hover {
-
-}
 
 .hero_container section:last-child {
-	color: #939393;
-	border-right: solid 5px #939393;
-	background: transparent;
+	/*color: rgb(204, 196, 61);
+	border-right: solid 5px #939393;*/
+	/*background: transparent;*/
 }
 
 .hero_container section:nth-child(even) {
-	color: #555;
-	border-right: solid 5px #555;
-	background: transparent;
+	/*color: #ffffff;
+	border-right: solid 5px #555;*/
+	/*background: transparent;*/
 }
 
 .hero_container section:last-child, #content_holder section:last-child {
 	margin-right: 0;
 }
 
-.hero_container section:hover {
-	/*width:80%;*/
-}
+
 
 .hero_container h1 {
 	margin-top: 0;
-	border-bottom: 10px solid rgba(255,255,255,.5);
+	border-bottom: 10px solid rgba(255, 255, 255, .51);
 }
 
 .hero_container p {
@@ -1019,91 +1017,102 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		-webkit-align-content: stretch;
 		-ms-flex-line-pack: stretch;
 		align-content: stretch;
-		height:22em;
-		/*background: transparent url("../img/bw1024.png") no-repeat 50% 100% fixed;
+		height: 22em;
+		/*background: transparent url("../img/bw1024.png") no-repeat 25%  35% fixed;
 		background-size: cover;*/
-		padding-bottom:0;
-		border:solid 1px #000;
-		-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.5);
-		box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+		padding-bottom: 0;
+		border: solid 1px #000;
 	}
 
 	.hero_container section {
-		/*flex:1 0 0%;*/
+		-webkit-box-flex:1;
+		-webkit-flex:1 0 0;
+		-moz-box-flex:1;
+		-ms-flex:1 0 0;
+		flex:1 0 0;
 		-webkit-transition: all .75s ease-in 0s;
 		-o-transition: all .75s ease-in 0s;
 		transition: all .75s ease-in 0s;
-		-webkit-box-flex: 1;
-		-webkit-flex-grow: 1;
-		-moz-box-flex: 1;
-		-ms-flex-positive: 1;
-		flex-grow: 1;
-		-webkit-flex-basis: 0;
-		-ms-flex-preferred-size: 0;
+		/*flex-grow: 1;
 		flex-basis: 0;
-		-webkit-flex-shrink: 0;
-		-ms-flex-negative: 0;
-		flex-shrink: 0;
-		background: transparent url("../img/bw1024.png") no-repeat 50% 100% fixed;
+		flex-shrink: 0;*/
+		background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
 
+	.hero_container section p {
+		opacity:0;
+		-webkit-transition: all .75s ease-in 0s;
+		-o-transition: all .75s ease-in 0s;
+		transition: all .75s ease-in 0s;
+	}
+	.hero_container section h1 {
+		font-size: 3.25rem;
+	}
+
 	.hero_container section:first-child {
 		/*flex-grow: 1;*/
-		background: transparent url("../img/bw1024.png") no-repeat 50% 100% fixed;
+		background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;
 		-webkit-background-size: cover;
 		background-size: cover;
 		border-right: solid 25px rgba(115, 115, 115, 0);
 	}
 
 	.hero_container section:first-child:hover {
-	background: transparent url("../img/c1024.png") no-repeat 50% 100% fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
+		background: transparent url("../img/citrusCol.jpg") no-repeat 25% 35% fixed;
+		-webkit-background-size: cover;
+		background-size: cover;
 	}
 
 	.hero_container section:nth-child(even) {
 		/*flex-grow: 1;*/
-		background: transparent url("../img/bw1024.png") no-repeat 50% 100% fixed;
+		background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;
 		-webkit-background-size: cover;
 		background-size: cover;
 		border-right: solid 25px rgba(85, 85, 85, 0);
 	}
+
 	.hero_container section:nth-child(even):hover {
-		background: transparent url("../img/c1024.png") no-repeat 50% 100% fixed;
-		-webkit-background-size: cover;
-		background-size: cover;
-	}
-	.hero_container section:last-child {
-		/*flex-grow: 1;*/
-		background: transparent url("../img/bw1024.png") no-repeat 50% 100% fixed;
-		-webkit-background-size: cover;
-		background-size: cover;
-		border-right: solid 25px rgba(147, 147, 147, 0);
-	}
-	.hero_container section:last-child:hover {
-		background: transparent url("../img/c1024.png") no-repeat 50% 100% fixed;
+		background: transparent url("../img/citrusCol.jpg") no-repeat 25% 35% fixed;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
 
-	.hero_container section:hover,.hero_container section.openHero {
+	.hero_container section:last-child {
+		/*flex-grow: 1;*/
+		background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;
+		-webkit-background-size: cover;
+		background-size: cover;
+		border-right: solid 25px rgba(147, 147, 147, 0);
+	}
+
+	.hero_container section:last-child:hover {
+		background: transparent url("../img/citrusCol.jpg") no-repeat 25% 35% fixed;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.hero_container section:hover p {
+		opacity: 1;
+	}
+	.hero_container section:hover, .hero_container section.openHero {
 		-webkit-box-flex: 3;
 		-webkit-flex-grow: 3;
 		-moz-box-flex: 3;
 		-ms-flex-positive: 3;
 		flex-grow: 3;
-		border-color: rgba(219, 122, 13, 0.75);
+		/*border-color: rgba(219, 122, 13, 0.75);*/
 	}
-	.hero_container section:last-child.openHero,.hero_container section:nth-child(even).openHero,.hero_container section:first-child.openHero {
-		background: transparent url("../img/c1024.png") no-repeat 50% 100% fixed;
+
+	.hero_container section:last-child.openHero, .hero_container section:nth-child(even).openHero, .hero_container section:first-child.openHero {
+		background: transparent url("../img/citrusCol.jpg") no-repeat 25% 35% fixed;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
-/*	.hero_container section:not(.openHero) {
-		opacity:.5;
-	}*/
+
+	/*	.hero_container section:not(.openHero) {
+			opacity:.5;
+		}*/
 	.hero_container h1 {
 		margin: 0 .6rem .3rem .3rem;
 	}

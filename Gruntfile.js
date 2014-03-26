@@ -7,6 +7,19 @@ module.exports = function(grunt) {
     // 1. All configuration goes here
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        // Remove unused CSS from files
+        /*uncss: {
+            dist: {
+                files: {
+                    'css/mainTidy.css': ['index.html']
+                }
+            },
+            options: {
+            stylesheets  : ['css/main.css']
+             *//*ignore: ['#ignoredselector', '.ignoredselector']*//*
+            }
+
+        },*/
         autoprefixer: {
             options: {
                 browsers: ['last 10 version', 'ie 10', 'ie 9', 'ie 8', 'ie 7', '> 1%'/*, 'ff > 8'*/]
@@ -29,8 +42,8 @@ module.exports = function(grunt) {
 
         cssmin : {
                 css:{
-                src: 'css/production.css',
-                dest: 'css/production.min.css'
+                src: 'css/production-cleaned.css',
+                dest: 'css/production-cleaned.min.css'
             }
 
         },
@@ -50,6 +63,7 @@ module.exports = function(grunt) {
 
     // 3. Where we tell Grunt we plan to use this plug-in.
     //grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-uncss');
     require('load-grunt-tasks')(grunt); /* See http://blog.ponyfoo.com/2013/11/13/grunt-tips-and-tricks */
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
