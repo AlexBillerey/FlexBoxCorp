@@ -40,10 +40,10 @@ module.exports = function(grunt) {
         },
 
 
-        cssmin : {
-                css:{
-                src: 'css/production-cleaned.css',
-                dest: 'css/production-cleaned.min.css'
+        cssmin: {
+            css: {
+                src: 'css/production.css',
+                dest: 'css/production.min.css'
             }
 
         },

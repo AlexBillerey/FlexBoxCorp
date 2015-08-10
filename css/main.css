@@ -9,7 +9,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+body {
+	background: #ffffff;
+}
 html,
 button,
 input,
@@ -306,7 +308,7 @@ header h1 {
 	align-self: flex-start;
 	background: #fff;
 	border-left: solid 1px #999;
-	background: white;
+	background: #bebebe;
 }
 
 /*
@@ -395,11 +397,9 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	.hero_container section {
 		flex:1 0 0;
 		transition: all .75s ease-in 0s;
-		/*flex-grow: 1;
-		flex-basis: 0;
-		flex-shrink: 0;*/
 		background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;
 		background-size: cover;
+		overflow: hidden;
 	}
 
 	.hero_container section p {
@@ -449,7 +449,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		opacity: 1;
 	}
 	.hero_container section:hover, .hero_container section.openHero {
-		flex-grow: 3;
+		flex-grow: 2;
 		/*border-color: rgba(219, 122, 13, 0.75);*/
 	}
 
