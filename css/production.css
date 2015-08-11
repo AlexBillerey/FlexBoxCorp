@@ -1013,9 +1013,9 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		-moz-box-direction: normal;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		-webkit-flex-flow: row wrap;
-		-ms-flex-flow: row wrap;
-		flex-flow: row wrap;
+		-webkit-flex-flow: wrap;
+		-ms-flex-flow: wrap;
+		flex-flow: wrap;
 		-webkit-align-content: stretch;
 		-ms-flex-line-pack: stretch;
 		align-content: stretch;
@@ -1023,7 +1023,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		/*background: transparent url("../img/bw1024.png") no-repeat 25%  35% fixed;
 		background-size: cover;*/
 		padding-bottom: 0;
-		border: solid 1px #000;
+		/*border: solid 1px #000;*/
 	}
 
 	.hero_container section {
@@ -1040,7 +1040,20 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		background-size: cover;
 		overflow: hidden;
 	}
-
+	.hero_container section {
+		/*background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;*/
+	}
+	.hero_container section:hover,
+	.hero_container section.openHero {
+		background: transparent url("../img/citrusCol.jpg") no-repeat 25% 35% fixed;
+		-webkit-box-flex: 2.5;
+		-webkit-flex-grow: 2.5;
+		-moz-box-flex: 2.5;
+		-ms-flex-positive: 2.5;
+		flex-grow: 2.5;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
 	.hero_container section p {
 		opacity:0;
 		-webkit-transition: all .75s ease-in 0s;
@@ -1050,65 +1063,18 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	.hero_container section h1 {
 		font-size: 3.25rem;
 	}
-
-	.hero_container section:first-child {
-		/*flex-grow: 1;*/
-		background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;
-		-webkit-background-size: cover;
-		background-size: cover;
-		border-right: solid 25px rgba(115, 115, 115, 0);
-	}
-
-	.hero_container section:first-child:hover {
-		background: transparent url("../img/citrusCol.jpg") no-repeat 25% 35% fixed;
-		-webkit-background-size: cover;
-		background-size: cover;
-	}
-
-	.hero_container section:nth-child(even) {
-		/*flex-grow: 1;*/
-		background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;
-		-webkit-background-size: cover;
-		background-size: cover;
-		border-right: solid 25px rgba(85, 85, 85, 0);
-	}
-
-	.hero_container section:nth-child(even):hover {
-		background: transparent url("../img/citrusCol.jpg") no-repeat 25% 35% fixed;
-		-webkit-background-size: cover;
-		background-size: cover;
-	}
-
-	.hero_container section:last-child {
-		/*flex-grow: 1;*/
-		background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;
-		-webkit-background-size: cover;
-		background-size: cover;
-		border-right: solid 25px rgba(147, 147, 147, 0);
-	}
-
-	.hero_container section:last-child:hover {
-		background: transparent url("../img/citrusCol.jpg") no-repeat 25% 35% fixed;
-		-webkit-background-size: cover;
-		background-size: cover;
-	}
 	.hero_container section:hover p {
 		opacity: 1;
 	}
 	.hero_container section:hover, .hero_container section.openHero {
-		-webkit-box-flex: 2;
-		-webkit-flex-grow: 2;
-		-moz-box-flex: 2;
-		-ms-flex-positive: 2;
-		flex-grow: 2;
+		/*flex-grow: 2;*/
 		/*border-color: rgba(219, 122, 13, 0.75);*/
 	}
 
-	.hero_container section:last-child.openHero, .hero_container section:nth-child(even).openHero, .hero_container section:first-child.openHero {
+/*	.hero_container section:last-child.openHero, .hero_container section:nth-child(even).openHero, .hero_container section:first-child.openHero {
 		background: transparent url("../img/citrusCol.jpg") no-repeat 25% 35% fixed;
-		-webkit-background-size: cover;
 		background-size: cover;
-	}
+	}*/
 
 	/*	.hero_container section:not(.openHero) {
 			opacity:.5;
