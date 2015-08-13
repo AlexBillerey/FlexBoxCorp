@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 
     // 3. Where we tell Grunt we plan to use this plug-in.
     //grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-uncss');
+    //grunt.loadNpmTasks('grunt-uncss');
     require('load-grunt-tasks')(grunt); /* See http://blog.ponyfoo.com/2013/11/13/grunt-tips-and-tricks */
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
