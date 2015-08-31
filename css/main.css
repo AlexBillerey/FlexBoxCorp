@@ -106,8 +106,8 @@ textarea {
 	width: 85%;
 	max-width: 64em;
 	margin: 0 auto;
-	/*display: flex;
-	flex-direction: column;*/
+	display: flex;
+	flex-direction: column;
 }
 
 header {
@@ -411,7 +411,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	}
 	header h1 {
 		flex: 1 0 auto;
-		background: #51ff32;
+		background: rgba(81, 255, 50, 0.29);
 	}
 	nav {
 	flex: 3 0 auto;
