@@ -538,7 +538,7 @@ table {
    Base styles: opinionated defaults
    ========================================================================== */
 body {
-	background: rgb(255, 105, 180);
+	background: #fff;
 }
 
 html,
@@ -629,7 +629,7 @@ textarea {
    ========================================================================== */
 
 #container {
-	background: #fffff8;
+	background: #fff;
 	/*margin-top: 0;*/
 	width: 85%;
 	max-width: 64em;
@@ -646,10 +646,11 @@ textarea {
 	-moz-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+
 }
 
 header {
-	background: #a6ff38;
+	background: #fff;
 	border-bottom: solid 1px #999;
 }
 
@@ -764,6 +765,13 @@ header h1 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+#container {
+	width: 95%;
+	max-width: 64em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 #nav {
 
 	background: rgba(255, 255, 255, 0);
@@ -796,6 +804,13 @@ nav li {
 	-moz-box-flex: 1;
 	-ms-flex: 1 0 auto;
 	flex: 1 0 auto;
+}
+form {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 .hero_container {
@@ -1003,10 +1018,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 
 @media only screen and (min-width: 20em) {
 	/* Style adjustments for viewports that meet the condition 20em = 320px */
-	#container {
-		width: 95%;
-		max-width: 64em;
-	}
+
 }
 
 @media only screen and (min-width: 48em) {
@@ -1029,10 +1041,10 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		/*background: transparent url("../img/bw1024.png") no-repeat 25%  35% fixed;
 		background-size: cover;*/
 		padding-bottom: 0;
-		/*border: solid 1px #000;*/
+		border: solid 1px #000;
 	}
 	header {
-		background: #3899ff;
+		background: #fff;
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -moz-box;
@@ -1053,7 +1065,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		-moz-box-flex: 1;
 		-ms-flex: 1 0 auto;
 		flex: 1 0 auto;
-		background: rgba(81, 255, 50, 0.29);
+		background: #fff;
 	}
 	nav {
 	-webkit-box-flex: 3;
@@ -1065,9 +1077,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 
 	}
 	nav ul {
-		background: -webkit-linear-gradient(260deg, rgba(255, 255, 255, 1), rgba(89, 89, 89, 0.5));
-		background: -o-linear-gradient(260deg, rgba(255, 255, 255, 1), rgba(89, 89, 89, 0.5));
-		background: linear-gradient(190deg,  rgba(255, 255, 255, 1), rgba(89, 89, 89, 0.5));
+		background: #fff;
 		padding:0;
 		display: -webkit-box;
 		display: -webkit-flex;
