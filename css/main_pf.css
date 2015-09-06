@@ -123,7 +123,7 @@ textarea {
 
 header {
 	background: #fff;
-	border-bottom: solid 1px #999;
+	/*border-bottom: solid 1px #999;*/
 }
 
 header h1 {
@@ -246,11 +246,23 @@ header h1 {
 }
 #nav {
 
-	background: rgba(255, 255, 255, 0);
-/*	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	width: 100%;*/
+	background: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+/*	flex-direction: column;*/
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-moz-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 0 auto;
+	-moz-box-flex: 1;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
 }
 
 nav ul {
@@ -258,6 +270,7 @@ nav ul {
 	align-self: flex-start;*/
 	margin: /*-2em 0 0*/ 0;
 	background: -webkit-linear-gradient(260deg, rgba(204, 204, 204, 0.50), rgba(255, 255, 255, 1));
+	background: -moz-linear-gradient(260deg, rgba(204, 204, 204, 0.50), rgba(255, 255, 255, 1));
 	background: -o-linear-gradient(260deg, rgba(204, 204, 204, 0.50), rgba(255, 255, 255, 1));
 	background: linear-gradient(190deg, rgba(204, 204, 204, 0.50), rgba(255, 255, 255, 1));
 	/*width: inherit;*/
@@ -268,15 +281,40 @@ nav ul {
 }
 
 nav li {
-	-webkit-align-self: flex-end;
-	-ms-flex-item-align: end;
-	align-self: flex-end;
+	background: yellowgreen;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-moz-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1 0 auto;
 	-moz-box-flex: 1;
 	-ms-flex: 1 0 auto;
 	flex: 1 0 auto;
+	-webkit-align-self: stretch;
+	-ms-flex-item-align: stretch;
+	align-self: stretch;
 }
+nav a {
+	background: #ffffff;
+	color:#db7a0d;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+nav a:hover {
+	background: #db7a0d;
+	color: #fff;
+}
+
 form {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -284,7 +322,14 @@ form {
 	display: -ms-flexbox;
 	display: flex;
 }
-
+input {
+	padding:.75em;
+	border:none;
+}
+input[type=text] {
+	border: solid 1px #db7a0d;
+	border-top: none;
+}
 .hero_container {
 	/*border-bottom: solid 1px #999;*/
 	margin-top: 1em;
@@ -318,6 +363,7 @@ form {
 	-ms-flex-align: stretch;
 	align-items: stretch;
 	-webkit-transition: all .5s linear 0s;
+	-moz-transition: all .5s linear 0s;
 	-o-transition: all .5s linear 0s;
 	transition: all .5s linear 0s;
 }
@@ -328,6 +374,7 @@ form {
 	background-image:none;
 	color:#222223;
 	-webkit-transition: all .25s linear 0s;
+	-moz-transition: all .25s linear 0s;
 	-o-transition: all .25s linear 0s;
 	transition: all .25s linear 0s;
 }
@@ -407,6 +454,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 
 .no-flexbox #prime_content article {
 	width: -webkit-calc(50% - 1.5em);
+	width: -moz-calc(50% - 1.5em);
 	width: calc(50% - 1.5em);
 	float: left;
 	/*background: rgba(56,134,64,.8);*/
@@ -451,6 +499,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	-ms-flex: 0 1 auto;
 	flex: 0 1 auto;
 	width: -webkit-calc(49% - 1em);
+	width: -moz-calc(49% - 1em);
 	width: calc(49% - 1em);
 	font-size: .9375em;
 	-webkit-align-self: flex-start;
@@ -522,14 +571,14 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		display: -moz-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-align-content: space-between;
-		-ms-flex-line-pack: justify;
-		align-content: space-between;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-moz-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
+		-webkit-box-align: stretch;
+		-webkit-align-items: stretch;
+		-moz-box-align: stretch;
+		-ms-flex-align: stretch;
+		align-items: stretch;
+		-webkit-align-content: space-around;
+		-ms-flex-line-pack: distribute;
+		align-content: space-around;
 	}
 	header h1 {
 		-webkit-box-flex: 1;
@@ -539,34 +588,85 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		flex: 1 0 auto;
 		background: #fff;
 	}
-	nav {
-	-webkit-box-flex: 3;
-	-webkit-flex: 3 0 auto;
-	-moz-box-flex: 3;
-	-ms-flex: 3 0 auto;
-	flex: 3 0 auto;
-
-
+	#nav {
+	-webkit-box-flex: 10;
+	-webkit-flex: 10 0 auto;
+	-moz-box-flex: 10;
+	-ms-flex: 10 0 auto;
+	flex: 10 0 auto;
+		-webkit-box-pack: end;
+		-webkit-justify-content: flex-end;
+		-moz-box-pack: end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
 	}
 	nav ul {
-		background: #fff;
+		background: #ffffff;
 		padding:0;
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -moz-box;
 		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 0 auto;
+		-moz-box-flex: 1;
+		-ms-flex: 1 0 auto;
+		flex: 1 0 auto;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-moz-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+
 		/*flex-direction: row;
 		align-items: flex-end;*/
+	}
+	nav li {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: stretch;
+		-webkit-align-items: stretch;
+		-moz-box-align: stretch;
+		-ms-flex-align: stretch;
+		align-items: stretch;
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 1 auto;
+		-moz-box-flex: 0;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
+		-webkit-align-self: stretch;
+		-ms-flex-item-align: stretch;
+		align-self: stretch;
+	}
+	nav a {
+		padding: .75rem 1rem;
+	}
+	nav form {
+		-webkit-box-pack: end;
+		-webkit-justify-content: flex-end;
+		-moz-box-pack: end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+		background: #ffffff;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
 	}
 
 	.hero_container section {
 		-webkit-box-flex:1;
-		-webkit-flex:1 0 0;
+		-webkit-flex:1;
 		-moz-box-flex:1;
-		-ms-flex:1 0 0;
-		flex:1 0 0;
+		-ms-flex:1;
+		flex:1;
 		-webkit-transition: all .25s linear 0s;
+		-moz-transition: all .25s linear 0s;
 		-o-transition: all .25s linear 0s;
 		transition: all .25s linear 0s;
 		background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;
@@ -588,6 +688,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	.hero_container section p {
 		opacity:0;
 		-webkit-transition: all .75s ease-in 0s;
+		-moz-transition: all .75s ease-in 0s;
 		-o-transition: all .75s ease-in 0s;
 		transition: all .75s ease-in 0s;
 	}

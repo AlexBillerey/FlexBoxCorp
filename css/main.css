@@ -113,7 +113,7 @@ textarea {
 
 header {
 	background: #fff;
-	border-bottom: solid 1px #999;
+	/*border-bottom: solid 1px #999;*/
 }
 
 header h1 {
@@ -234,11 +234,11 @@ header h1 {
 }
 #nav {
 
-	background: rgba(255, 255, 255, 0);
-/*	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	width: 100%;*/
+	background: rgb(255, 255, 255);
+	display: flex;
+/*	flex-direction: column;*/
+	align-items: stretch;
+	flex: 1 0 auto;
 }
 
 nav ul {
@@ -252,13 +252,33 @@ nav ul {
 }
 
 nav li {
-	align-self: flex-end;
+	background: yellowgreen;
+	align-items: stretch;
 	flex: 1 0 auto;
+	align-self: stretch;
 }
+nav a {
+	background: #ffffff;
+	color:#db7a0d;
+	display: flex;
+	align-items: center;
+}
+nav a:hover {
+	background: #db7a0d;
+	color: #fff;
+}
+
 form {
 	display: flex;
 }
-
+input {
+	padding:.75em;
+	border:none;
+}
+input[type=text] {
+	border: solid 1px #db7a0d;
+	border-top: none;
+}
 .hero_container {
 	/*border-bottom: solid 1px #999;*/
 	margin-top: 1em;
@@ -412,28 +432,44 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	header {
 		background: #fff;
 		display: flex;
-		align-content: space-between;
-		align-items: center;
+		align-items: stretch;
+		align-content: space-around;
 	}
 	header h1 {
 		flex: 1 0 auto;
 		background: #fff;
 	}
-	nav {
-	flex: 3 0 auto;
-
-
+	#nav {
+	flex: 10 0 auto;
+		justify-content: flex-end;
 	}
 	nav ul {
-		background: #fff;
+		background: #ffffff;
 		padding:0;
 		display: flex;
+		flex: 1 0 auto;
+		justify-content: space-between;
+
 		/*flex-direction: row;
 		align-items: flex-end;*/
 	}
+	nav li {
+		display: flex;
+		align-items: stretch;
+		flex: 0 1 auto;
+		align-self: stretch;
+	}
+	nav a {
+		padding: .75rem 1rem;
+	}
+	nav form {
+		justify-content: flex-end;
+		background: #ffffff;
+		display: flex;
+	}
 
 	.hero_container section {
-		flex:1 0 0;
+		flex:1;
 		transition: all .25s linear 0s;
 		background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;
 		background-size: cover;
