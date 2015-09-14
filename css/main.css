@@ -11,6 +11,8 @@
    ========================================================================== */
 body {
 	background: #fff;
+	/*background: transparent url("../img/citrusCol.jpg") no-repeat 0% 0% fixed;
+	background-size: cover;*/
 }
 
 html,
@@ -100,20 +102,38 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#container {
-	background: #fff;
-	/*margin-top: 0;*/
-	width: 85%;
-	max-width: 64em;
+/*#container {
+	background: transparent;
+	/!*margin-top: 0;*!/
+	width: 95%;
+	max-width: 70em;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 
-}
-
-header {
+}*/
+.headerWrapper {
 	background: #fff;
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+	z-index: 100;
+}
+header {
+	background: rgba(255, 255, 255, 0.15);
+	/*width: 100%;
+	max-width: 70em;
+	margin: 0 auto;*/
 	/*border-bottom: solid 1px #999;*/
+	width: 95%;
+	max-width: 70em;
+	margin: 0 auto;
 }
 
 header h1 {
@@ -227,10 +247,21 @@ header h1 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-#container {
+/*#container {
 	width: 95%;
 	max-width: 64em;
+
+}*/
+#container {
+	background: transparent;
+	/*margin-top: 0;*/
+	width: 95%;
+	max-width: 70em;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 	box-sizing: border-box;
+	padding-top: 60px;
 }
 #nav {
 
@@ -261,7 +292,10 @@ nav a {
 	background: #ffffff;
 	color:#db7a0d;
 	display: flex;
+	flex: 1 0 auto;
 	align-items: center;
+	font-size: 14px;
+	font-size: 0.875rem;
 }
 nav a:hover {
 	background: #db7a0d;
@@ -277,7 +311,7 @@ input {
 }
 input[type=text] {
 	border: solid 1px #db7a0d;
-	border-top: none;
+	/*border-top: none;*/
 }
 .hero_container {
 	/*border-bottom: solid 1px #999;*/
@@ -349,7 +383,32 @@ input[type=text] {
 	border-left: solid 1px #999;
 	background: #bebebe;
 }
-
+.row {
+	padding:1.25em 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+section {
+	/*flex: 0 1 auto;*/
+}
+.sixty {
+	/*flex: 0 0 60%;*/
+	flex: 1 60%;
+}
+.fifty {
+	flex: 1 50%;
+}
+.fourty {
+	/*flex-basis: 40%;*/
+	flex: 1 40%;
+}
+.thirty {
+	flex: 1 30%;
+}
+.twenty5 {
+	flex: 1 25%;
+}
 /*
 This is a hack to get around FF's lack of support for flex-wrap see http://caniuse.com/#search=flex notes section for more info.
 */
@@ -428,27 +487,38 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		background-size: cover;*/
 		padding-bottom: 0;
 		border: solid 1px #000;
+		background: transparent url("../img/citrusGs.jpg") no-repeat 0% 0% fixed;
+		background-size: 100% auto;
 	}
 	header {
-		background: #fff;
+		/*background: #ff2963;*/
 		display: flex;
-		align-items: stretch;
-		align-content: space-around;
+		/*align-items: stretch;
+		align-content: space-around;*/
+		justify-content: space-between;
 	}
 	header h1 {
-		flex: 1 0 auto;
-		background: #fff;
+		flex: 0 0 auto;
+		background: #36ff36;
+		align-self: stretch;
 	}
-	#nav {
-	flex: 10 0 auto;
+	nav {
+		/*flex: 0 1 auto;*/
+/*
+		border-left: solid 1px red;*/
+		display: flex;
+		/*background: blue;*/
+		flex: 0 1 auto;
 		justify-content: flex-end;
+		width: calc(100% - 217px);
 	}
 	nav ul {
-		background: #ffffff;
+		/*background: #ffffff;*/
 		padding:0;
 		display: flex;
-		flex: 1 0 auto;
+		flex: 0 1 auto;
 		justify-content: space-between;
+		/*background: #3899ff;*/
 
 		/*flex-direction: row;
 		align-items: flex-end;*/
@@ -458,6 +528,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		align-items: stretch;
 		flex: 0 1 auto;
 		align-self: stretch;
+		background: indianred;
 	}
 	nav a {
 		padding: .75rem 1rem;
@@ -467,19 +538,22 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		background: #ffffff;
 		display: flex;
 	}
+	input[type="submit"] {
+		width: 50px;
+	}
 
 	.hero_container section {
 		flex:1;
 		transition: all .25s linear 0s;
-		background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;
+		/*background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;*/
 		background-size: cover;
 		overflow: hidden;
 	}
 	.hero_container section:hover,
 	.hero_container section.openHero {
-		background: transparent url("../img/citrusCol.jpg") no-repeat 25% 35% fixed;
+		background: transparent url("../img/citrusCol.jpg") no-repeat 0 0 fixed;
 		flex-grow: 2.5;
-		background-size: cover;
+		background-size: 100% auto;
 	}
 	.hero_container section p {
 		opacity:0;
@@ -487,6 +561,8 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	}
 	.hero_container section h1 {
 		font-size: 3.25rem;
+		/*transform: rotateZ(90deg);
+		transform-origin: 0 0 0;*/
 	}
 	.oranges:hover h1,.openHero.oranges h1 {
 		border-color: orange;
@@ -528,6 +604,23 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		}*/
 	.hero_container h1 {
 		margin: 0 .6rem .3rem .3rem;
+	}
+	input[type="text"] {
+		background: pink;
+		width: 150px;
+		height: 1em;
+		box-sizing: border-box;
+	}
+	.row {
+		flex-direction: row;
+	}
+	.row section {
+		background: #ededed;
+		box-sizing: border-box;
+		margin-left: 3%;
+	}
+	.row section:first-child {
+		margin-left: 0;
 	}
 
 }
