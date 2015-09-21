@@ -29,14 +29,14 @@ module.exports = function (grunt) {
         },
         uncss: {
             options : {
-                ignore: ['.hero_container section.openHero']
+                ignore: ['.hero_container section.openHero, .no-touch']
             },
             dist: {
                 /*files: {
                     'css/cleaned__production.css': ['index.html']
                 },*/
-                    src : ['index.html'],
-                    dest : 'css/cleaned_production.css'
+                src : ['index.html'],
+                dest : 'css/cleaned_production.css'
             }
         },
 
@@ -51,7 +51,7 @@ module.exports = function (grunt) {
             minify: {
                 expand: true,
                 cwd: 'css/',
-                src: ['*.css', '!*.min.css', '!main.css', '!main_pf.css', '!normalize.css'],
+                src: ['*.css', '!*.min.css', '!main.css', '!main_pf.css', '!normalize.css', '!cleaned_production.css', '!cleaned_*.css'],
                 dest: 'css/',
                 ext: '.min.css'
             }
