@@ -652,29 +652,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	.col_span_12_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 100%;-moz-box-flex: 0;-ms-flex: 0 0 100%;flex: 0 0 100%;}
 
 
-	.hero_container {
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-webkit-flex-direction: row;
-		-moz-box-orient: horizontal;
-		-moz-box-direction: normal;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		-webkit-flex-flow: wrap;
-		-ms-flex-flow: wrap;
-		flex-flow: wrap;
-		-webkit-align-content: stretch;
-		-ms-flex-line-pack: stretch;
-		align-content: stretch;
-		height: 25em;
-		/*background: transparent url("../img/bw1024.png") no-repeat 25%  35% fixed;
-		background-size: cover;*/
-		padding-bottom: 0;
-		border: solid 1px #000;
-		background: transparent url("../img/citrusGs.jpg") no-repeat 0% 0% fixed;
-		-webkit-background-size: 100% auto;
-		background-size: 100% auto;
-	}
+
 
 	header {
 		/*background: #ff2963;*/
@@ -796,13 +774,35 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	input[type="submit"] {
 		width: 50px;
 	}
-
+	.hero_container {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		-moz-box-orient: horizontal;
+		-moz-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-flex-flow: wrap;
+		-ms-flex-flow: wrap;
+		flex-flow: wrap;
+		-webkit-align-content: stretch;
+		-ms-flex-line-pack: stretch;
+		align-content: stretch;
+		height: 20em;
+		/*background: transparent url("../img/bw1024.png") no-repeat 25%  35% fixed;
+		background-size: cover;*/
+		padding-bottom: 0;
+		border: solid 1px #000;
+		background: transparent url("../img/citrusGs.jpg") no-repeat 0% 0% fixed;
+		-webkit-background-size: 100% auto;
+		background-size: 100% auto;
+	}
 	.hero_container section {
 		-webkit-box-flex: 1;
-		-webkit-flex: 1;
+		-webkit-flex: 1 0 0;
 		-moz-box-flex: 1;
-		-ms-flex: 1;
-		flex: 1;
+		-ms-flex: 1 0 0;
+		flex: 1 0 0;
 		-webkit-transition: all .25s linear 0s;
 		-moz-transition: all .25s linear 0s;
 		-o-transition: all .25s linear 0s;
@@ -905,10 +905,10 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		background: rgb(255, 255, 255);
 		color: #db7a0d;
 		width: 251px;
-		-webkit-transition: all .25s linear 0s;
-		-moz-transition: all .25s linear 0s;
-		-o-transition: all .25s linear 0s;
-		transition: all .25s linear 0s;
+		-webkit-transition: all .26s linear 0s;
+		-moz-transition: all .26s linear 0s;
+		-o-transition: all .26s linear 0s;
+		transition: all .26s linear 0s;
 	}
 
 	.row {

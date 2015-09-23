@@ -495,18 +495,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	.col_span_12_of_12	{flex: 0 0 100%;}
 
 
-	.hero_container {
-		flex-direction: row;
-		flex-flow: wrap;
-		align-content: stretch;
-		height: 25em;
-		/*background: transparent url("../img/bw1024.png") no-repeat 25%  35% fixed;
-		background-size: cover;*/
-		padding-bottom: 0;
-		border: solid 1px #000;
-		background: transparent url("../img/citrusGs.jpg") no-repeat 0% 0% fixed;
-		background-size: 100% auto;
-	}
+
 
 	header {
 		/*background: #ff2963;*/
@@ -565,9 +554,20 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	input[type="submit"] {
 		width: 50px;
 	}
-
+	.hero_container {
+		flex-direction: row;
+		flex-flow: wrap;
+		align-content: stretch;
+		height: 20em;
+		/*background: transparent url("../img/bw1024.png") no-repeat 25%  35% fixed;
+		background-size: cover;*/
+		padding-bottom: 0;
+		border: solid 1px #000;
+		background: transparent url("../img/citrusGs.jpg") no-repeat 0% 0% fixed;
+		background-size: 100% auto;
+	}
 	.hero_container section {
-		flex: 1;
+		flex: 1 0 0;
 		transition: all .25s linear 0s;
 		/*background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;*/
 		background-size: cover;
@@ -653,7 +653,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		background: rgb(255, 255, 255);
 		color: #db7a0d;
 		width: 251px;
-		transition: all .25s linear 0s;
+		transition: all .26s linear 0s;
 	}
 
 	.row {

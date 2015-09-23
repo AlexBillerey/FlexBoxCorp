@@ -15,7 +15,7 @@ $(document).ready(function () {
         }*/
     }
 
-    setTimeout(getRandom,3);
+    setTimeout(getRandom, 3);
     toggleHeaderShadow();
 });
 

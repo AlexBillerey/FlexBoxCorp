@@ -27,36 +27,27 @@ module.exports = function (grunt) {
                 dest: 'css/production.css'
             }
         },
+
         uncss: {
-            options : {
-                ignore: ['.hero_container section.openHero, .no-touch']
-            },
             dist: {
-                /*files: {
-                    'css/cleaned__production.css': ['index.html']
-                },*/
-                src : ['index.html'],
-                dest : 'css/cleaned_production.css'
+                options: {
+                    ignore: ['.hero_container section.openHero', '.no-touch']
+                },
+                files: {
+                    'css/tidy_flexboxcorp.css': ['index.html']
+                }
             }
         },
 
-        /*cssmin: {
-            css: {
-                src: 'css/production.css',
-                dest: 'css/production.min.css'
-            }
-
-        },*/
         cssmin: {
             minify: {
                 expand: true,
                 cwd: 'css/',
-                src: ['*.css', '!*.min.css', '!main.css', '!main_pf.css', '!normalize.css', '!cleaned_production.css', '!cleaned_*.css'],
+                src: ['*.css', '!*.min.css', '!main.css', '!main_pf.css', '!normalize.css', '!cleaned*.css', '!tidy*.css'],
                 dest: 'css/',
                 ext: '.min.css'
             }
         },
-
 
         watch: {
             css: {
@@ -71,7 +62,7 @@ module.exports = function (grunt) {
 
     // 3. Where we tell Grunt we plan to use this plug-in.
     //grunt.loadNpmTasks('grunt-contrib-concat');
-    //grunt.loadNpmTasks('grunt-uncss');
+    grunt.loadNpmTasks('grunt-uncss');
     require('load-grunt-tasks')(grunt);
     /* See http://blog.ponyfoo.com/2013/11/13/grunt-tips-and-tricks */
 
