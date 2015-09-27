@@ -34,7 +34,7 @@ module.exports = function (grunt) {
                     ignore: ['.hero_container section.openHero', '.no-touch']
                 },
                 files: {
-                    'css/tidy_flexboxcorp.css': ['index.html']
+                    'css/tidy_flexboxcorp2.css': ['index.html']
                 }
             }
         },
@@ -43,7 +43,7 @@ module.exports = function (grunt) {
             minify: {
                 expand: true,
                 cwd: 'css/',
-                src: ['*.css', '!*.min.css', '!main.css', '!main_pf.css', '!normalize.css', '!cleaned*.css', '!tidy*.css'],
+                src: ['*.css', '!*.min.css', '!main.css', '!main_pf.css', '!normalize.css', '!cleaned*.css'/*, '!tidy*.css'*/],
                 dest: 'css/',
                 ext: '.min.css'
             }

@@ -136,8 +136,8 @@ textarea {
 	-moz-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, .88);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, .88);
 	z-index: 100;
 }
 
@@ -148,7 +148,7 @@ header {
 	margin: 0 auto;*/
 	/*border-bottom: solid 1px #999;*/
 	width: 95%;
-	max-width: 960px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -272,7 +272,7 @@ header h1 {
 	background: transparent;
 	/*margin-top: 0;*/
 	width: 95%;
-	max-width: 960px;
+	max-width: 1200px;
 	margin: 0 auto;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -638,17 +638,29 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 @media only screen and (min-width: 48em) {
 	/* Style adjustments for viewports that meet the condition 48em aka 768 */
 
-	.col_span_1_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 4.4375%;-moz-box-flex: 0;-ms-flex: 0 0 4.4375%;flex: 0 0 4.4375%;}
-	.col_span_2_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 13.125%;-moz-box-flex: 0;-ms-flex: 0 0 13.125%;flex: 0 0 13.125%;}
-	.col_span_3_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 21.8125%;-moz-box-flex: 0;-ms-flex: 0 0 21.8125%;flex: 0 0 21.8125%;}
-	.col_span_4_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 30.5%;-moz-box-flex: 0;-ms-flex: 0 0 30.5%;flex: 0 0 30.5%;}
-	.col_span_5_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 39.1875%;-moz-box-flex: 0;-ms-flex: 0 0 39.1875%;flex: 0 0 39.1875%;}
-	.col_span_6_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 47.875%;-moz-box-flex: 0;-ms-flex: 0 0 47.875%;flex: 0 0 47.875%;}
-	.col_span_7_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 56.5625%;-moz-box-flex: 0;-ms-flex: 0 0 56.5625%;flex: 0 0 56.5625%;}
-	.col_span_8_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 65.25%;-moz-box-flex: 0;-ms-flex: 0 0 65.25%;flex: 0 0 65.25%;}
-	.col_span_9_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 73.9375%;-moz-box-flex: 0;-ms-flex: 0 0 73.9375%;flex: 0 0 73.9375%;}
-	.col_span_10_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 82.625%;-moz-box-flex: 0;-ms-flex: 0 0 82.625%;flex: 0 0 82.625%;}
-	.col_span_11_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 91.3125%;-moz-box-flex: 0;-ms-flex: 0 0 91.3125%;flex: 0 0 91.3125%;}
+/*	.col_span_1_of_12	{flex: 0 0 4.4375%;}
+	.col_span_2_of_12	{flex: 0 0 13.125%;}
+	.col_span_3_of_12	{flex: 0 0 21.8125%;}
+	.col_span_4_of_12	{flex: 0 0 30.5%;}
+	.col_span_5_of_12	{flex: 0 0 39.1875%;}
+	.col_span_6_of_12	{flex: 0 0 47.875%;}
+	.col_span_7_of_12	{flex: 0 0 56.5625%;}
+	.col_span_8_of_12	{flex: 0 0 65.25%;}
+	.col_span_9_of_12	{flex: 0 0 73.9375%;}
+	.col_span_10_of_12	{flex: 0 0 82.625%;}
+	.col_span_11_of_12	{flex: 0 0 91.3125%;}
+	.col_span_12_of_12	{flex: 0 0 100%;}*/
+	.col_span_1_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 5.27777777777778%;-moz-box-flex: 0;-ms-flex: 0 0 5.27777777777778%;flex: 0 0 5.27777777777778%;}
+	.col_span_2_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 13.8888888888889%;-moz-box-flex: 0;-ms-flex: 0 0 13.8888888888889%;flex: 0 0 13.8888888888889%;}
+	.col_span_3_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 22.5%;-moz-box-flex: 0;-ms-flex: 0 0 22.5%;flex: 0 0 22.5%;}
+	.col_span_4_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 31.1111111111111%;-moz-box-flex: 0;-ms-flex: 0 0 31.1111111111111%;flex: 0 0 31.1111111111111%;}
+	.col_span_5_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 39.7222222222222%;-moz-box-flex: 0;-ms-flex: 0 0 39.7222222222222%;flex: 0 0 39.7222222222222%;}
+	.col_span_6_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 48.3333333333333%;-moz-box-flex: 0;-ms-flex: 0 0 48.3333333333333%;flex: 0 0 48.3333333333333%;}
+	.col_span_7_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 56.9444444444444%;-moz-box-flex: 0;-ms-flex: 0 0 56.9444444444444%;flex: 0 0 56.9444444444444%;}
+	.col_span_8_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 65.5555555555556%;-moz-box-flex: 0;-ms-flex: 0 0 65.5555555555556%;flex: 0 0 65.5555555555556%;}
+	.col_span_9_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 74.1666666666667%;-moz-box-flex: 0;-ms-flex: 0 0 74.1666666666667%;flex: 0 0 74.1666666666667%;}
+	.col_span_10_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 82.7777777777778%;-moz-box-flex: 0;-ms-flex: 0 0 82.7777777777778%;flex: 0 0 82.7777777777778%;}
+	.col_span_11_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 91.3888888888889%;-moz-box-flex: 0;-ms-flex: 0 0 91.3888888888889%;flex: 0 0 91.3888888888889%;}
 	.col_span_12_of_12	{-webkit-box-flex: 0;-webkit-flex: 0 0 100%;-moz-box-flex: 0;-ms-flex: 0 0 100%;flex: 0 0 100%;}
 
 
@@ -728,7 +740,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		-moz-box-pack: end;
 		-ms-flex-pack: end;
 		justify-content: flex-end;
-		margin-right: 3em;
+		margin-right: 0em;
 	}
 
 	nav li {
@@ -920,6 +932,15 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		-ms-flex-direction: row;
 		flex-direction: row;
 	}
+	.row_reverse {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		-webkit-flex-direction: row-reverse;
+		-moz-box-orient: horizontal;
+		-moz-box-direction: reverse;
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+	}
 
 	.row section {
 		background: #ededed;
@@ -941,17 +962,8 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	.row .row [class^="col"] {
 		padding: 0;
 	}
-	.row .row article {
-		/*background: tomato;*/
-	}
 
-	.row [class^="col"]:first-of-type {
-		/*margin-left: 0;*/
-	}
 
-	/*.row section:first-child {
-		margin-left: 0;
-	}*/
 	.test {
 		background: cadetblue;
 	}
