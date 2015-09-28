@@ -501,7 +501,8 @@ input[type=text] {
 	background: #bebebe;
 }
 
-.row {
+.row,
+.rowReversed {
 	padding: 1.25em 0;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -531,6 +532,13 @@ input[type=text] {
 section ul {
 	padding-left: 0;
 	list-style-type: none;
+}
+[class^="col"] {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 section li {
 	margin-bottom: 1em;
@@ -932,7 +940,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		-ms-flex-direction: row;
 		flex-direction: row;
 	}
-	.row_reverse {
+	.rowReversed {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: reverse;
 		-webkit-flex-direction: row-reverse;
@@ -942,7 +950,8 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		flex-direction: row-reverse;
 	}
 
-	.row section {
+	.row section,
+	.rowReversed section {
 		background: #ededed;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -951,13 +960,12 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	}
 
 	[class^="col"] {
-		/*margin-left: 2.91666666666667%;*/
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-		/*float: left;*/
 		padding: .5em;
 		border: none;
+		/*display: flex;*/
 	}
 	.row .row [class^="col"] {
 		padding: 0;
