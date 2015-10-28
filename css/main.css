@@ -537,16 +537,17 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	nav {
 		display: flex;
 		flex: 0 1 calc(100% - 217px);
-		justify-content: flex-end;
+		justify-content: space-between;
 		transition: all .25s linear 0s;
 	}
 
 	nav ul {
-		padding: 0;
+		padding: 0% 0% 0% 5%;
 		display: flex;
-		flex: 0 1 100%;
-		justify-content: flex-end;
+		flex: auto;
+		justify-content: flex-start;
 		margin-right: 0em;
+		background: lightgoldenrodyellow;
 	}
 
 	nav li {
@@ -554,7 +555,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		align-items: stretch;
 		flex: 0 1 auto;
 		align-self: stretch;
-		background: indianred;
+		background: rgba(205, 92, 92, 0.91);
 	}
 
 	nav a {
@@ -563,8 +564,9 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 
 	nav form {
 		justify-content: flex-end;
-		background: #ffffff;
 		display: flex;
+		flex: auto;
+		background: lightcyan;
 	}
 
 	input[type="submit"] {
@@ -604,8 +606,8 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 
 	.hero_container section h1 {
 		font-size: 3.25rem;
-		/*transform: rotateZ(90deg);
-		transform-origin: 0 0 0;*/
+		transformZ: rotate(90deg);
+		transform-origin: 100% 50%;
 	}
 
 	.oranges:hover h1, .openHero.oranges h1 {
@@ -629,7 +631,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	}
 
 	.limes:hover h1:first-letter, .openHero.limes h1:first-letter {
-		color: #32CD32;
+		color: #32CD31;
 		color: red;
 	}
 
@@ -659,16 +661,19 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 
 	input[type="text"] {
 		background: #db7a0d;
-		width: 150px;
+		width: 50%;
 		height: 2.75em;
 		box-sizing: border-box;
 		transition: all .25s linear 0s;
 	}
-
+	input[type="submit"] {
+		background: lightpink;
+		width: 25%;
+	}
 	.no-touch input[type="text"]:focus {
-		background: rgb(255, 255, 255);
+		background: #d63cdb;
 		color: #db7a0d;
-		width: 251px;
+		width: 75%;
 		transition: all .26s linear 0s;
 	}
 
@@ -693,7 +698,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		/*display: flex;*/
 	}
 	.row .row [class^="col"] {
-		padding: 0;
+		padding: 0%;
 	}
 
 

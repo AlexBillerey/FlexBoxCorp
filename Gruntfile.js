@@ -34,7 +34,7 @@ module.exports = function (grunt) {
                     ignore: ['.hero_container section.openHero', '.no-touch']
                 },
                 files: {
-                    'css/tidy_flexboxcorp2.css': ['index.html']
+                    'css/uncss_flexboxcorp3.css': ['index.html']
                 }
             }
         },
@@ -67,6 +67,6 @@ module.exports = function (grunt) {
     /* See http://blog.ponyfoo.com/2013/11/13/grunt-tips-and-tricks */
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['watch', 'autoprefixer', 'concat', 'cssmin']);
+    grunt.registerTask('default', [ 'autoprefixer', 'concat', 'cssmin']);
 
 };
