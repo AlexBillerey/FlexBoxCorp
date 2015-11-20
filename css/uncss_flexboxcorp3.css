@@ -1,4 +1,4 @@
-/*** uncss> filename: css/normalize.css ***/
+/*** uncss> filename: css/production.css ***/
 
 /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 
@@ -327,8 +327,6 @@ input::-moz-focus-inner {
  * Remove most spacing between table cells.
  */
 
-/*** uncss> filename: css/main.css ***/
-
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 /*
@@ -416,11 +414,26 @@ html {
   right: 0;
   width: 100%;
   height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, .88);
-  z-index: 100;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, .88);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .88);
+  z-index: 101;
 }
 
 header {
@@ -499,10 +512,22 @@ header h1 {
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-top: 60px;
+  padding-top: 100px;
 }
 
 nav ul {
@@ -511,22 +536,46 @@ nav ul {
   margin: /*-2em 0 0*/ 0;
   /*background: linear-gradient(190deg, rgba(204, 204, 204, 0.50), rgba(255, 255, 255, 1));*/
   /*width: inherit;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 5%;
 }
 
 nav li {
   background: yellowgreen;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -moz-box-flex: 1;
+  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
   align-self: stretch;
 }
 
 nav a {
   background: #ffffff;
   color: #db7a0d;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -moz-box-flex: 1;
+  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 14px;
   font-size: 0.875rem;
@@ -538,6 +587,10 @@ nav a:hover {
 }
 
 form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -557,12 +610,36 @@ input[type=text] {
   /*border-bottom: solid 1px #999;*/
   margin-top: 1em;
   padding-bottom: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
   align-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
+  -webkit-transition: all .5s linear 0s;
+  -moz-transition: all .5s linear 0s;
   transition: all .5s linear 0s;
 }
 
@@ -571,6 +648,8 @@ input[type=text] {
   display: block;
   background-image: none;
   color: #222223;
+  -webkit-transition: all .25s linear 0s;
+  -moz-transition: all .25s linear 0s;
   transition: all .25s linear 0s;
 }
 
@@ -605,16 +684,60 @@ input[type=text] {
   margin-left: 1em;
 }
 
-.row,
-.rowReversed {
-  padding: 1.25em 0;
+.row {
+  padding: 1em 0 0 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  background: lavender;
+}
+
+.row .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0%;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -moz-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  background: rgba(255, 105, 180, 0.31);
 }
 
 [class^="col"] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -moz-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  -webkit-transition: all .25s linear 0s;
+  -moz-transition: all .25s linear 0s;
+  transition: all .25s linear 0s;
 }
 
 /*
@@ -644,70 +767,148 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	.col_span_12_of_12	{flex: 0 0 100%;}*/
 
   .col_span_2_of_12 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 13.8888888888889%;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 13.8888888888889%;
     flex: 0 0 13.8888888888889%;
   }
 
   .col_span_3_of_12 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 22.5%;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 22.5%;
     flex: 0 0 22.5%;
   }
 
   .col_span_4_of_12 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 31.1111111111111%;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 31.1111111111111%;
     flex: 0 0 31.1111111111111%;
   }
 
-  .col_span_5_of_12 {
-    flex: 0 0 39.7222222222222%;
-  }
-
   .col_span_6_of_12 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 48.3333333333333%;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 48.3333333333333%;
     flex: 0 0 48.3333333333333%;
   }
 
   .col_span_7_of_12 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 56.9444444444444%;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 56.9444444444444%;
     flex: 0 0 56.9444444444444%;
   }
 
   .col_span_8_of_12 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 65.5555555555556%;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 65.5555555555556%;
     flex: 0 0 65.5555555555556%;
   }
 
   .col_span_9_of_12 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 74.1666666666667%;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 74.1666666666667%;
     flex: 0 0 74.1666666666667%;
   }
 
   header {
     /*background: #ff2963;*/
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     /*align-items: stretch;
 		align-content: space-around;*/
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   header h1 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 auto;
     flex: 0 0 auto;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
     align-self: stretch;
   }
 
   nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 -webkit-calc(100% - 217px);
+    -moz-box-flex: 0;
+    -ms-flex: 0 1 calc(100% - 217px);
     flex: 0 1 calc(100% - 217px);
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-transition: all .25s linear 0s;
+    -moz-transition: all .25s linear 0s;
     transition: all .25s linear 0s;
   }
 
   nav ul {
-    padding: 0% 0% 0% 5%;
+    padding: 0% 0% 0% .5em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+    -moz-box-flex: 1;
+    -ms-flex: auto;
     flex: auto;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     margin-right: 0em;
     background: lightgoldenrodyellow;
   }
 
   nav li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
     align-items: stretch;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -moz-box-flex: 0;
+    -ms-flex: 0 1 auto;
     flex: 0 1 auto;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
     align-self: stretch;
     background: rgba(205, 92, 92, 0.91);
   }
@@ -717,8 +918,20 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
   }
 
   nav form {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+    -moz-box-flex: 1;
+    -ms-flex: auto;
     flex: auto;
     background: lightcyan;
   }
@@ -728,21 +941,44 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
   }
 
   .hero_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-flex-flow: wrap;
+    -ms-flex-flow: wrap;
     flex-flow: wrap;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
     align-content: stretch;
     height: 20em;
     /*background: transparent url("../img/bw1024.png") no-repeat 25%  35% fixed;
 		background-size: cover;*/
     padding-bottom: 0;
-    border: solid 1px #000;
+    /*border: solid 1px #000;*/
     background: transparent url("../img/citrusGs.jpg") no-repeat 0% 0% fixed;
     background-size: 100% auto;
+    margin-bottom: 3em;
   }
 
   .hero_container section {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 0;
+    -moz-box-flex: 1;
+    -ms-flex: 1 0 0;
     flex: 1 0 0;
+    -webkit-transition: all .25s linear 0s;
+    -moz-transition: all .25s linear 0s;
     transition: all .25s linear 0s;
+    -webkit-transition-property: -webkit-box-flex, -webkit-box-flex, transform;
+    -webkit-transition-property: -webkit-flex-grow, -webkit-flex, -webkit-transform;
+    -moz-transition-property: -moz-box-flex, -moz-box-flex, -moz-transform;
+    transition-property: -ms-flex-positive, -ms-flex, transform;
+    transition-property: -webkit-box-flex, -webkit-box-flex, transform;
+    transition-property: flex-grow, flex, transform;
     /*background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;*/
     background-size: cover;
     overflow: hidden;
@@ -751,18 +987,33 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
   .hero_container section:hover,
   .hero_container section.openHero {
     background: transparent url("../img/citrusCol.jpg") no-repeat 0 0 fixed;
+    -webkit-box-flex: 2.5;
+    -webkit-flex-grow: 2.5;
+    -moz-box-flex: 2.5;
+    -ms-flex-positive: 2.5;
     flex-grow: 2.5;
     background-size: 100% auto;
+    -webkit-box-shadow: 2px 4px 15px rgba(0, 0, 0, .5),  -2px -2px 15px rgba(0, 0, 0, .5);
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, .5),  -2px -2px 15px rgba(0, 0, 0, .5);
+    -webkit-transform: scale(1.025);
+    -moz-transform: scale(1.025);
+    -ms-transform: scale(1.025);
+    transform: scale(1.025);
   }
 
   .hero_container section p {
     opacity: 0;
+    -webkit-transition: all .75s ease-in 0s;
+    -moz-transition: all .75s ease-in 0s;
     transition: all .75s ease-in 0s;
   }
 
   .hero_container section h1 {
     font-size: 3.25rem;
     transformZ: rotate(90deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
   }
 
@@ -809,7 +1060,11 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
     background: #db7a0d;
     width: 50%;
     height: 2.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-transition: all .25s linear 0s;
+    -moz-transition: all .25s linear 0s;
     transition: all .25s linear 0s;
   }
 
@@ -819,30 +1074,38 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
   }
 
   .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
 
-  .rowReversed {
-    flex-direction: row-reverse;
-  }
-
-  .row section,
-  .rowReversed section {
-    background: #ededed;
+  .row section {
+    background: rgba(237, 237, 237, 0.83);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     /*margin-left: 3%;*/
   }
 
   [class^="col"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: .5em;
     border: none;
     /*display: flex;*/
   }
+
+  .row .row [class^="col"] {
+    padding: 0%;
+  }
 }
 
 @media print,
-(-o-min-device-pixel-ratio: 5/4),
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
@@ -858,6 +1121,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }

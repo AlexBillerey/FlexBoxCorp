@@ -34,7 +34,7 @@ module.exports = function (grunt) {
                     ignore: ['.hero_container section.openHero', '.no-touch']
                 },
                 files: {
-                    'css/uncss_flexboxcorp3.css': ['index.html']
+                    'css/uncss_main_normalise_seperate.css': ['index.html']
                 }
             }
         },
@@ -48,6 +48,45 @@ module.exports = function (grunt) {
                 ext: '.min.css'
             }
         },
+        cssmetrics: {
+            dev: {
+                src: [
+                    'css/tidy_flexboxcorp3.min.css'
+                ]
+            }
+        },
+        cssstats: {
+            options: {
+                logConsole: false,
+                jsonOutput: true,
+                htmlOutput: true,
+                uniqueDeclarations: [
+                    'font-size',
+                    'float',
+                    'width',
+                    'height',
+                    'color',
+                    'background-color'
+                ],
+                addOrigin:          false,
+                addRawCss:          false,
+                addHtmlStyles:      false,
+                addGraphs:          false
+                /*csslint:            {
+                    clearDefaults: false,
+                    ruleset:  {
+                        rulesetFile: 'path/to/rulesetFile.json',
+                        'zero-units': true,
+                        'adjoining-classes': true
+                    },
+                    groupResults: true
+                }*/
+            },
+            files: {
+                'cssStats': ['css/main.css']
+            }
+        },
+
 
         watch: {
             css: {
@@ -63,6 +102,8 @@ module.exports = function (grunt) {
     // 3. Where we tell Grunt we plan to use this plug-in.
     //grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-uncss');
+    grunt.loadNpmTasks('grunt-css-metrics');
+    grunt.loadNpmTasks('grunt-css-statistics');
     require('load-grunt-tasks')(grunt);
     /* See http://blog.ponyfoo.com/2013/11/13/grunt-tips-and-tricks */
 
