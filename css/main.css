@@ -598,7 +598,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		transition: all .25s linear 0s;
 		/*background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;*/
 		transition-property: flex-grow, flex, transform;
-		flex: 1 0 0;
+		flex: 1;
 	}
 
 	.hero_container section:hover,
@@ -606,7 +606,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		background: transparent url("../img/citrusCol.jpg") no-repeat 0 0 fixed;
 		background-size: 100% auto;
 		box-shadow:  2px 4px 15px rgba(0, 0, 0, .5),  -2px -2px 15px rgba(0, 0, 0, .5);
-		transform : scale(1.025);
+		/*transform : scale(1.025,1);*/
 		flex-grow: 2.5;
 	}
 
