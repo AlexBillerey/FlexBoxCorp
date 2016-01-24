@@ -292,13 +292,14 @@ nav li {
 }
 
 nav a {
-	background: #ffffff;
-	color: #db7a0d;
+	/*background: #ffffff;
+	color: #db7a0d;*/
 	display: flex;
 	font-size: 14px;
 	font-size: 0.875rem;
 	flex: 1 0 auto;
 	align-items: center;
+	border-right: solid 1px red;
 }
 
 nav a:hover {
@@ -392,14 +393,14 @@ input[type=text] {
 
 .row,
 .rowReversed {
-	background: lavender;
+	background: #ffffff;
 	display: flex;
 	flex-direction: column;
 	padding: 1em 0 0 0;
 	justify-content: space-between;
 }
 .row .row {
-	background: rgba(255, 105, 180, 0.31);
+	background: rgba(255, 255, 255, 0.31);
 	display: flex;
 	padding: 0%;
 	flex-flow: row wrap;
@@ -483,6 +484,10 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	background: #946bcd;
 	display: flex;
 }
+a {
+	text-decoration: none;
+	color: inherit;
+}
 
 @media only screen and (min-width: 20em) {
 	/* Style adjustments for viewports that meet the condition 20em = 320px */
@@ -544,7 +549,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	nav {
 		display: flex;
 		transition: all .25s linear 0s;
-		flex: 0 1 calc(100% - 217px);
+		flex: 0 1 77.5%/*930px calc(100% - 217px)*/;
 		justify-content: space-between;
 	}
 
@@ -553,16 +558,16 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		display: flex;
 		margin-right: 0em;
 		padding: 0% 0% 0% .5em;
-		flex: auto;
+		/*flex: auto;*/
 		justify-content: flex-start;
 	}
 
 	nav li {
-		background: rgba(205, 92, 92, 0.91);
+		/*background: rgba(205, 92, 92, 0.91);*/
 		display: flex;
-		align-items: stretch;
+		/*align-items: stretch;
 		flex: 0 1 auto;
-		align-self: stretch;
+		align-self: stretch;*/
 	}
 
 	nav a {
@@ -573,7 +578,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		background: lightcyan;
 		display: flex;
 		justify-content: flex-end;
-		flex: auto;
+		/*flex: auto;*/
 	}
 
 	input[type="submit"] {
@@ -586,7 +591,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		height: 20em;
 		/*background: transparent url("../img/bw1024.png") no-repeat 25%  35% fixed;
 		background-size: cover;*/
-		margin-bottom: 3em;
+		margin-bottom: 0;
 		/*border: solid 1px #000;*/
 		padding-bottom: 0;
 		flex-flow: wrap;
@@ -598,7 +603,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		transition: all .25s linear 0s;
 		/*background: transparent url("../img/citrusGs.jpg") no-repeat 25% 35% fixed;*/
 		transition-property: flex-grow, flex, transform;
-		flex: 1;
+		flex: 2;
 	}
 
 	.hero_container section:hover,
@@ -607,7 +612,7 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 		background-size: 100% auto;
 		box-shadow:  2px 4px 15px rgba(0, 0, 0, .5),  -2px -2px 15px rgba(0, 0, 0, .5);
 		/*transform : scale(1.025,1);*/
-		flex-grow: 2.5;
+		flex-grow: 10;
 	}
 
 	.hero_container section p {
@@ -671,21 +676,22 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 	}
 
 	input[type="text"] {
-		background: #db7a0d;
+		/*background: #db7a0d;*/
 		box-sizing: border-box;
 		height: 2.75em;
 		transition: all .25s linear 0s;
-		width: 50%;
+		/*width: 50%;*/
+		flex: 50%;
 	}
 	input[type="submit"] {
 		background: lightpink;
 		width: 25%;
 	}
-	.no-touch input[type="text"]:focus {
-		background: #d63cdb;
+	/*.no-touch */input[type="text"]:focus {
+		/*background: #d63cdb;*/
 		color: #db7a0d;
 		transition: all .26s linear 0s;
-		width: 75%;
+		flex: 75%;
 	}
 
 	.row {
@@ -697,16 +703,51 @@ This is a hack to get around FF's lack of support for flex-wrap see http://caniu
 
 	.row section,
 	.rowReversed section {
-		background: rgba(237, 237, 237, 0.83);
+		background: rgb(255, 255, 255);
 		box-sizing: border-box;
 		/*margin-left: 3%;*/
+		display: flex;
 	}
 
 	[class^="col"] {
-		border: none;
+		border: solid 1px #dddd88;
 		box-sizing: border-box;
 		padding: .5em;
 		/*display: flex;*/
+	}
+	.column {
+		flex-direction: column;
+	}
+	.mainNewsItem {
+		display: flex;
+		flex-direction: column;
+	}
+	.mainNewsItem div a {
+		border-bottom:solid 1px #c5c5c5;
+		flex-direction: row;
+		display:flex;
+		justify-content: space-between;
+		padding-bottom: .75em;
+	}
+	.mainNewsItem h2,
+	.mainNewsItem p,
+	.mainNewsItem img {
+		box-sizing: border-box;
+	}
+	.mainNewsItem h2 {
+		flex:0 1 100%;
+		background: #ff2e2c;
+		align-self: stretch;
+	}
+	.mainNewsItem p {
+		flex:0 1 auto;
+		padding-right: 1em;
+		margin-top: 0;
+	}
+	.mainNewsItem img {
+		/*flex:400px;*/
+		display: flex;
+		align-self: flex-start;
 	}
 	.row .row [class^="col"] {
 		padding: 0%;
