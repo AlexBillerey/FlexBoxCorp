@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="732b47f8-6a8f-4801-884d-2e8df4b54df8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/output.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/uncss_output2312.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="FlexBoxCorp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,23 +29,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+            <state vertical-scroll-proportion="1.0412371">
+              <caret line="109" column="68" selection-start-line="109" selection-start-column="68" selection-end-line="109" selection-end-column="68" />
               <folding>
-                <marker date="1452357266379" expanded="true" signature="1650:1801" placeholder="..." />
-                <marker date="1452357266379" expanded="true" signature="1741:1769" placeholder="..." />
+                <marker date="1456275166760" expanded="true" signature="1650:1801" placeholder="..." />
+                <marker date="1456275166760" expanded="true" signature="1741:1769" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08600337">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding />
             </state>
@@ -119,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="551" column="23" selection-start-line="551" selection-start-column="23" selection-end-line="551" selection-end-column="23" />
+              <caret line="752" column="33" selection-start-line="751" selection-start-column="8" selection-end-line="752" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -167,10 +167,10 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/qweet.html" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -208,7 +208,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -302,7 +302,7 @@
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Gruntfile.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js.buildTools.grunt.node_interpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -644,14 +644,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21232876" sideWeight="0.30162162" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21174005" sideWeight="0.30162162" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21232876" sideWeight="0.6983784" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31544715" sideWeight="0.5003723" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32864866" sideWeight="0.47945204" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32769555" sideWeight="0.47945204" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33034775" sideWeight="0.4705228" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31567568" sideWeight="0.5147524" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33034775" sideWeight="0.51869917" order="2" side_tool="true" content_ui="tabs" />
@@ -774,8 +774,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1452357266379" expanded="true" signature="1650:1801" placeholder="..." />
-            <marker date="1452357266379" expanded="true" signature="1741:1769" placeholder="..." />
+            <marker date="1456275166760" expanded="true" signature="1650:1801" placeholder="..." />
+            <marker date="1456275166760" expanded="true" signature="1741:1769" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -813,8 +813,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1452357266379" expanded="true" signature="1650:1801" placeholder="..." />
-            <marker date="1452357266379" expanded="true" signature="1741:1769" placeholder="..." />
+            <marker date="1456275166760" expanded="true" signature="1650:1801" placeholder="..." />
+            <marker date="1456275166760" expanded="true" signature="1741:1769" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -838,8 +838,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1452357266379" expanded="true" signature="1650:1801" placeholder="..." />
-            <marker date="1452357266379" expanded="true" signature="1741:1769" placeholder="..." />
+            <marker date="1456275166760" expanded="true" signature="1650:1801" placeholder="..." />
+            <marker date="1456275166760" expanded="true" signature="1741:1769" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -870,8 +870,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="82" column="107" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1452357266379" expanded="true" signature="1650:1801" placeholder="..." />
-            <marker date="1452357266379" expanded="true" signature="1741:1769" placeholder="..." />
+            <marker date="1456275166760" expanded="true" signature="1650:1801" placeholder="..." />
+            <marker date="1456275166760" expanded="true" signature="1741:1769" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -909,8 +909,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="82" column="107" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1452357266379" expanded="true" signature="1650:1801" placeholder="..." />
-            <marker date="1452357266379" expanded="true" signature="1741:1769" placeholder="..." />
+            <marker date="1456275166760" expanded="true" signature="1650:1801" placeholder="..." />
+            <marker date="1456275166760" expanded="true" signature="1741:1769" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1089,30 +1089,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="551" column="23" selection-start-line="551" selection-start-column="23" selection-end-line="551" selection-end-column="23" />
+          <caret line="752" column="33" selection-start-line="751" selection-start-column="8" selection-end-line="752" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+        <state vertical-scroll-proportion="1.0412371">
+          <caret line="109" column="68" selection-start-line="109" selection-start-column="68" selection-end-line="109" selection-end-column="68" />
           <folding>
-            <marker date="1452357266379" expanded="true" signature="1650:1801" placeholder="..." />
-            <marker date="1452357266379" expanded="true" signature="1741:1769" placeholder="..." />
+            <marker date="1456275166760" expanded="true" signature="1650:1801" placeholder="..." />
+            <marker date="1456275166760" expanded="true" signature="1741:1769" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08600337">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
