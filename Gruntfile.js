@@ -15,7 +15,7 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'css/output.min.css': ['css/uncss_output2312.css']
+                    'css/output0503.min.css': ['css/uncss_output0503.css']
                 }
             }
         },
@@ -25,7 +25,7 @@ module.exports = function (grunt) {
                     ignore: ['.hero_container section.openHero', '.no-touch']
                 },
                 files: {
-                    'css/uncss_output2312.css': ['index.html']
+                    'css/uncss_output0503.css': ['index.html']
                 }
             }
         },
@@ -37,7 +37,7 @@ module.exports = function (grunt) {
                 server: {
                     baseDir: "./"
                 },
-                browser: ["chrome","firefox","opera","iexplore","safari"]
+                browser: ["chrome","firefox","opera","iexplore","ms edge"]
             }
         }
         //cssminend
